@@ -1,0 +1,109 @@
+[gd_scene load_steps=21 format=3 uid="uid://clc3lgv5acxo5"]
+
+[ext_resource type="Texture2D" uid="uid://dx38ktidu7u1g" path="res://Assets/skeleton/2/Idle/0_Skeleton_Warrior_Idle_000.png" id="1_1tc2d"]
+[ext_resource type="Texture2D" uid="uid://csfw5j5h06f12" path="res://Assets/skeleton/2/Idle/0_Skeleton_Warrior_Idle_001.png" id="2_5xvaq"]
+[ext_resource type="Texture2D" uid="uid://baxjapolntx7s" path="res://Assets/skeleton/2/Idle/0_Skeleton_Warrior_Idle_002.png" id="3_523mh"]
+[ext_resource type="Texture2D" uid="uid://b35l8kfiquain" path="res://Assets/skeleton/2/Idle/0_Skeleton_Warrior_Idle_003.png" id="4_b4fdn"]
+[ext_resource type="Texture2D" uid="uid://c7jbwsf3cwukh" path="res://Assets/skeleton/2/Idle/0_Skeleton_Warrior_Idle_004.png" id="5_r4l0h"]
+[ext_resource type="Texture2D" uid="uid://dixy735ebj8ns" path="res://Assets/skeleton/2/Idle/0_Skeleton_Warrior_Idle_005.png" id="6_wsynx"]
+[ext_resource type="Texture2D" uid="uid://bumndwi10udyq" path="res://Assets/skeleton/2/Idle/0_Skeleton_Warrior_Idle_006.png" id="7_vw758"]
+[ext_resource type="Texture2D" uid="uid://x6jgviqvupec" path="res://Assets/skeleton/2/Idle/0_Skeleton_Warrior_Idle_007.png" id="8_p038s"]
+[ext_resource type="Texture2D" uid="uid://c70fr58ruhtmr" path="res://Assets/skeleton/2/Idle/0_Skeleton_Warrior_Idle_008.png" id="9_epav5"]
+[ext_resource type="Texture2D" uid="uid://b2c1e6jfs764r" path="res://Assets/skeleton/2/Idle/0_Skeleton_Warrior_Idle_009.png" id="10_j44to"]
+[ext_resource type="Texture2D" uid="uid://cy3jabpasx480" path="res://Assets/skeleton/2/Idle/0_Skeleton_Warrior_Idle_010.png" id="11_psb1h"]
+[ext_resource type="Texture2D" uid="uid://tu3lc17bfsmi" path="res://Assets/skeleton/2/Idle/0_Skeleton_Warrior_Idle_011.png" id="12_4f7b1"]
+[ext_resource type="Texture2D" uid="uid://df5d5e8ff5r2n" path="res://Assets/skeleton/2/Idle/0_Skeleton_Warrior_Idle_012.png" id="13_3ythy"]
+[ext_resource type="Texture2D" uid="uid://d17puwxl5ux15" path="res://Assets/skeleton/2/Idle/0_Skeleton_Warrior_Idle_013.png" id="14_w1773"]
+[ext_resource type="Texture2D" uid="uid://bg0m3cyswigl5" path="res://Assets/skeleton/2/Idle/0_Skeleton_Warrior_Idle_014.png" id="15_x3kd8"]
+[ext_resource type="Texture2D" uid="uid://b10gy2wf8bobf" path="res://Assets/skeleton/2/Idle/0_Skeleton_Warrior_Idle_015.png" id="16_ya73a"]
+[ext_resource type="Texture2D" uid="uid://bwi087xjvytu7" path="res://Assets/skeleton/2/Idle/0_Skeleton_Warrior_Idle_016.png" id="17_hnx55"]
+[ext_resource type="Texture2D" uid="uid://b2231l1d1diil" path="res://Assets/skeleton/2/Idle/0_Skeleton_Warrior_Idle_017.png" id="18_dpwrj"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gqje5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_1tc2d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_5xvaq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_523mh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_b4fdn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r4l0h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_wsynx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_vw758")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_p038s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_epav5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_j44to")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_psb1h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_4f7b1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_3ythy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_w1773")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_x3kd8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_ya73a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_hnx55")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_dpwrj")
+}],
+"loop": true,
+"name": &"default",
+"speed": 27.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_23wgs"]
+font_size = 300
+
+[node name="enemy_1" type="AnimatedSprite2D"]
+scale = Vector2(0.02, 0.02)
+sprite_frames = SubResource("SpriteFrames_gqje5")
+autoplay = "default"
+frame = 16
+frame_progress = 0.856174
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -700.0
+offset_top = -1000.0
+offset_right = -186.0
+offset_bottom = -591.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "100"
+label_settings = SubResource("LabelSettings_23wgs")
+horizontal_alignment = 1
+vertical_alignment = 1

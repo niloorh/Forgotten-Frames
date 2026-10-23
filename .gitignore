@@ -1,0 +1,18 @@
+# Godot generated data
+.godot/
+*.import
+
+# Build outputs
+*.exe
+*.pck
+*.app/
+*.zip
+
+# Local settings
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Third-party media are intentionally excluded
+Assets/

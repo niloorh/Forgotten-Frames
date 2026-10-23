@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://crhe8j4rd3pki"]
+
+[ext_resource type="AudioStream" uid="uid://ddqbhar6gd7t8" path="res://Assets/Dustforce Soundtrack 4 Fifty FPS Forest.mp3" id="1_f68vv"]
+
+[node name="BgMusic" type="Node"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_f68vv")
+volume_db = -30.0
+autoplay = true
+parameters/looping = true

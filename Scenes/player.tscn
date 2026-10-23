@@ -1,0 +1,149 @@
+[gd_scene load_steps=20 format=3 uid="uid://rqd4eywpdp5i"]
+
+[ext_resource type="Texture2D" uid="uid://b75b4jwdgxfv" path="res://Assets/Colour2/Outline/120x80_PNGSheets/_Attack2NoMovement.png" id="1_mc5dm"]
+[ext_resource type="Texture2D" uid="uid://ccg65qkurh6vq" path="res://Assets/Colour2/Outline/120x80_PNGSheets/_Idle.png" id="2_7755r"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o31pk"]
+atlas = ExtResource("1_mc5dm")
+region = Rect2(0, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rsook"]
+atlas = ExtResource("1_mc5dm")
+region = Rect2(120, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_as5or"]
+atlas = ExtResource("1_mc5dm")
+region = Rect2(240, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2domq"]
+atlas = ExtResource("1_mc5dm")
+region = Rect2(360, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jsua3"]
+atlas = ExtResource("1_mc5dm")
+region = Rect2(480, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4kmm6"]
+atlas = ExtResource("1_mc5dm")
+region = Rect2(600, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6kmiu"]
+atlas = ExtResource("2_7755r")
+region = Rect2(0, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ftkg"]
+atlas = ExtResource("2_7755r")
+region = Rect2(120, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6lj3n"]
+atlas = ExtResource("2_7755r")
+region = Rect2(240, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0nkgp"]
+atlas = ExtResource("2_7755r")
+region = Rect2(360, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d8jdl"]
+atlas = ExtResource("2_7755r")
+region = Rect2(480, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_64w0p"]
+atlas = ExtResource("2_7755r")
+region = Rect2(600, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shppo"]
+atlas = ExtResource("2_7755r")
+region = Rect2(720, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vc1fd"]
+atlas = ExtResource("2_7755r")
+region = Rect2(840, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xcjm8"]
+atlas = ExtResource("2_7755r")
+region = Rect2(960, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h06ju"]
+atlas = ExtResource("2_7755r")
+region = Rect2(1080, 0, 120, 80)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x62da"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o31pk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rsook")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_as5or")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2domq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jsua3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4kmm6")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6kmiu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ftkg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6lj3n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0nkgp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d8jdl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_64w0p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shppo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vc1fd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xcjm8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h06ju")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+
+[node name="player" type="AnimatedSprite2D"]
+scale = Vector2(0.4, 0.4)
+sprite_frames = SubResource("SpriteFrames_x62da")
+autoplay = "default"
+offset = Vector2(5, -20)
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.75
+anchor_right = 0.5
+anchor_bottom = 0.75
+offset_left = -75.0
+offset_top = -95.0
+offset_right = -47.0
+offset_bottom = -72.0
+text = "100"
+horizontal_alignment = 1
+vertical_alignment = 1
